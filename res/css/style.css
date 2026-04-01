@@ -1,0 +1,251 @@
+@import url('https://fonts.googleapis.com/css2?family=Creepster&family=Pangolin&family=Rock+Salt&family=UnifrakturCook:wght@700&display=swap');
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    overflow-y: auto;
+	overflow-x: hidden;
+}
+h1, h2, h3, h4, h5, h6, p {
+    margin: 0;
+    padding: 0;
+}
+* {
+    color: #fff;
+}
+a {
+    color: #929BD8;
+    font-weight: bold;
+	text-decoration: none;
+}
+a:hover, a:active {
+    color: #B0B9F6;
+    transition: 0.4s;
+	text-decoration: underline;
+}
+audio {
+	color: #fff;
+	filter: invert(100%);
+}
+video {
+	z-index: -1;
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	filter: opacity(0.2);
+}
+/*   fonts   */
+/*   
+	font-family: "UnifrakturCook", cursive;
+	font-family: "Rock Salt", cursive;
+	font-family: "Creepster", system-ui;
+	font-family: "Pangolin", cursive;
+*/
+
+.main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: Rock Salt, cursive;
+    font-size: 14px;
+}
+
+.navigation {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "Creepster", cursive;
+    font-size: 20px;
+    margin-top: 10px;
+}
+.navigation > nav {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 5px;
+}
+
+.bio {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "Panagolin", cursive;
+    text-align: center;
+    font-size: 18px;
+    margin-top: 150px;
+}
+
+.songs-intro {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "Panagolin", cursive;
+    text-align: center;
+    font-size: 18px;
+    margin-top: 100px;
+    font-size: 16px;
+}
+
+.songs {
+    display: grid;
+    grid-template-columns: repeat(2, 2fr);
+    align-items: center;
+    justify-content: center;
+	text-align: center;
+	margin-top: 50px;
+	font-family: "Rock Salt", cursive;
+    width: 50vw;
+    margin-left: 50vw;
+    transform: translateX(-25vw);
+    font-size: 16px;
+}
+
+.albums {
+	text-align: left;
+	font-size: 15px;
+	font-family: "Pangolin", cursive;
+	margin-top: 50px;
+	margin-bottom: 50px;
+	margin-left: 50vw;
+    transform: translateX(-25vw);
+	line-height: 40px;
+}
+.albums > p {
+    margin: 0;
+}
+.albums > p:nth-child(2),
+.albums > p:nth-child(4) {
+	margin-left: 15px;
+}
+.albums > ul {
+	list-style: none;
+	font-size: 15px;
+	margin-bottom: 5px;
+}
+.albums > ul > li:nth-child(n) {
+	line-height: 25px;
+	padding-bottom: 15px;
+}
+
+.members {
+    align-items: center;
+    text-align: center;
+    margin-top: 50vh;
+    transform: translateY(-40vh);
+    font-family: "Pangolin", cursive;
+    font-size: 25px;
+}
+
+.members > ul {
+    margin-top: 100px;
+}
+.members > ul {
+    display: grid;
+    grid-template-columns: repeat(5, 3fr);
+    padding: 0;
+    list-style: none;
+    justify-items: center;
+    font-family: "Creepster", cursive;
+    font-size: 24px;
+}
+.members > ul > img {
+    width: 65%;
+    height: auto;
+    position: relative;
+    padding-top: 20px;
+}
+.members > ul > .font {
+    font-family: "Panagolin", cursive;
+    font-size: 19px;
+    padding-top: 20px;
+}
+
+body {
+    background-color: #000;
+}
+
+@media (max-width: 768px) {
+    .main {
+        font-size: 12px;
+    }
+
+    .navigation {
+        font-size: 16px;
+    }
+    .navigation > nav {
+        gap: 0px;
+    }
+
+    .bio {
+        font-size: 18px;
+    }
+
+    .songs-intro {
+        font-size: 16px;
+    }
+    .songs {
+        grid-template-columns: repeat(1, 1fr);
+        font-size: 15px;
+    }
+
+    .albums,
+    .albums > ul {
+        font-size: 12px;
+    }
+
+    .members {
+        font-size: 25px;
+    }
+    .members > ul {
+        font-size: 19px;
+        grid-template-columns: repeat(1, 15fr);
+    }
+    .members > ul > .font {
+        font-size: 15px;
+    }
+    .members > ul > img {
+        width: 40%;
+    }
+}
+
+@media (min-width: 1200px) {
+    .main {
+        font-size: 16px;
+    }
+
+    .navigation {
+        font-size: 22px;
+    }
+    .navigation > nav {
+        gap: 10px;
+    }
+
+    .bio {
+        font-size: 20px;
+    }
+
+    .songs-intro {
+        font-size: 20px;
+    }
+    .songs {
+        grid-template-columns: repeat(2, 2fr);
+        font-size: 17px;
+    }
+
+    .albums,
+    .albums > ul {
+        font-size: 18px;
+    }
+
+    .members {
+        font-size: 30px;
+    }
+    .members > ul {
+        font-size: 27px;
+    }
+    .members > ul > .font {
+        font-size: 23px;
+    }
+}
